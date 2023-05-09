@@ -93,7 +93,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupomensaje i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupomensaje i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupomensaje .formularioinput-error').classList.remove('formularioinput-error-activo');
-                }
+                } 
             else {
                     document.getElementById('grupomensaje').classList.add('formulariogrupo-incorrecto');
                 document.getElementById('grupomensaje').classList.remove('formulariogrupo-correcto');
