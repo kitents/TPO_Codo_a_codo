@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchies!!!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+    
+    <div>
+        <h1>Hola mundo!!!</h1>
+        
+    </div>
+
+</header>
+
+<body>
+
+
+    <main>
+        <div>
+            <h1>Dejanos tu consulta</h1>
+        </div>
+
+        <div>
+            <form action="" class="formulario" id="formulario">
+                <!-- Grupo Nombre -->
+                <div class="formulariogrupo formulariogrupo-correcto" id="gruponombre">
+                    <label for="nombre" class="formulariolabel">Nombre</label>
+                    <div class="formulariogrupo-input">
+                        <input type="text" class="formularioinput" name="nombre" id="nombre" placeholder="Joaquin">
+                        <i class= "formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <p class="formularioinput-error">Ingresar nombre sin numeros o caracteres especiales</p>
+    
+                </div>
+    
+                <!-- Grupo Apellido -->
+                <div class="formulariogrupo formulariogrupo-correcto" id="grupoapellido"">
+                    <label for="apellido" class="formulariolabel">Apellido</label>
+                    <div class="formulariogrupo-input">
+                        <input type="text" class="formularioinput" name="apellido" id="apellido" placeholder="Molina">
+                        <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <p class="formularioinput-error">Ingresar apellido sin numeros o caracteres especiales</p>
+    
+                </div>
+    
+                <!-- Grupo Movil -->
+                <div class="formulariogrupo formulariogrupo-correcto" id="grupomovil">
+                    <label for="movil" class="formulariolabel">Movil</label>
+                    <div class="formulariogrupo-input">
+                        <input type="text" class="formularioinput" name="movil" id="movil" placeholder="1135627845">
+                        <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <p class="formularioinput-error">Ingresar solo numeros sin espacio (11 digitos)</p>
+    
+                </div>
+    
+                <!-- Grupo Email -->
+                <div class="formulariogrupo formulariogrupo-correcto" id="grupoemail">
+                    <label for="email" class="formulariolabel">Email</label>
+                    <div class="formulariogrupo-input">
+                        <input type="email" class="formularioinput" name="email" id="email" placeholder="correo@email.com">
+                        <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <p class="formularioinput-error">Ingresar correo con el formato indicado</p>
+    
+                </div>
+                    
+                <!-- Grupo Mensaje -->
+                <div class="formulariogrupo" id="grupomensaje">
+                    <label for="mensaje" class="formulariolabel">Mensaje</label>
+                    <div class="formulariogrupo-input">
+                        <input type="text" class="formularioinput" name="mensaje" id="mensaje" >
+                        <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <p class="formularioinput-error">Ingresar duda o consulta</p>
+                </div>
+    
+    
+                <!-- Grupo Llamada telefonica -->
+                <div class="formulariogrupo" id="grupollamada">
+                    <label class="formulariolabel">
+                        <input class="formulariollamada" type="checkbox" name="llamada" id="llamada" >
+                        ¿Prefiere se contactado via telefonica? 
+                    </label>
+                        
+                </div>
+    
+                <!-- Alerta para formulario -->
+                <div class="formularioalert" id="formularioalert">
+                    <p> <i class="fa-solid fa-triangle-exclamation" style="color: #ff0000 ;"></i> <b>Error:</b> Llenar todos los campos del formulario</p>
+                </div>
+    
+                <!-- Alerta de envio -->
+                <div class="formulariogrupo" id="formulariogrupo-btn-enviar">
+                    <button type="submit" class="formulariobtn">Enviar</button>
+                    <p class="formulariomensaje-exito" id="formulariomensaje-exito">Formulario enviado exitosamente</p>
+                </div>
+    
+        </div>
+
+        
+        </form>
+        <section>
+            <div>
+                Hola mi gente!
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/form.js"></script>
+    <script src="https://kit.fontawesome.com/f5d43ca80e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

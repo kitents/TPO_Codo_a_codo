@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    background-color:rgb(240, 240, 240) ;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    max-width: 800px; width: 90%; margin:auto; padding: 40px;
+}
+
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px ;
+}
+
+.formulariolabel {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formulariogrupo-input {
+    position: relative;
+}
+
+.formularioinput {
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.formularioinput:focus {
+    border:3px solid rgba(243, 146, 146, 0.87);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(red, green, blue, alpha);
+} 
+
+.formularioinput-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display:none;
+}
+
+.formularioinput-error-activo {
+    display: block;
+}
+
+/*
+.formularioinputmensaje {
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 100px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.formularioinputmensaje:focus {
+    border:3px solid rgba(243, 146, 146, 0.87);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(red, green, blue, alpha);
+} 
+.formularioinputmensaje-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display:none;
+}
+
+.formularioinputmensaje-error-activo {
+    display: block;
+}
+
+.formularioinput {
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 20px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.formularioinput:focus {
+    border:3px solid rgba(243, 146, 146, 0.87);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(red, green, blue, alpha);
+} 
+.formularioinput-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display:none;
+}
+
+.formularioinput-error-activo {
+    display: block;
+}
+*/
+.formulariovalidacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom:15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+
+}
+.formulariollamada {
+    margin: 10px;
+}
+
+.formulariomensaje,
+.formulariollamada,
+.formularioalert,
+.formularioenvio,
+
+{
+    grid-column: span 2;
+}
+
+.formularioalert {
+    height: 45px;
+    line-height: 45px;
+    background: rgba(238, 167, 167, 0.877);
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+   
+}
+.formularioalert-activo{
+    display: block
+}
+.formularioalert p {
+    background: transparent;
+    margin: 0;
+}
+
+/*.formularioenvio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
+
+.formulariobtn {
+    align-items:center;
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s ease all;
+    
+}
+
+.formulariobtn:hover {
+    box-shadow: 3px 0 30px rgba(16 16 16 );
+}
+
+.formulariomensaje-exito {
+    font-size: 14px;
+    color: rgb(88, 134, 88);
+    display: none;
+    
+}
+
+.formulariomensaje-exito-activo {
+    display: block;
+}
+
+/* EStilos para validacion*/
+
+.formulariogrupo-correcto .formulariovalidacion-estado {
+    color:  rgb(49, 126, 49) ;
+    opacity: 1;
+}
+
+.formulariogrupo-incorrecto .formulariolabel {
+    color: #bb2929;
+}
+.formulariogrupo-incorrecto .formulariovalidacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+.formulariogrupo-incorrecto .formularioinput {
+    color: #bb2929;
+    border: 3px solid #bb2929;
+}
+
+
+
+/*Mediaqueries*/
+
+/*
+@media screen and (max-width: 600px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .formulariomensaje,
+.formulariollamada,
+.formularioalert,
+.formularioenvio {
+    grid-column: 1;
+}
+.formulariobtn {
+    width: 100%;
+}
+}*/
+
+@media screen and (max-width: 1200px) {
+    
+    .formulariomensaje,
+.formulariollamada,
+.formularioalert,
+.formularioenvio {
+    grid-columns: 1fr;
+}
+.formulariobtn {
+    width: 100%;
+}}
