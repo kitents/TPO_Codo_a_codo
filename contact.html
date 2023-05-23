@@ -10,11 +10,22 @@
 </head>
 
 <header>
-    
-    <div>
-        <h1>Hola mundo!!!</h1>
-        
+
+    <div class="headerRonnie" id="headerRonnie">
+
+        <div class="cartel" id="cartel">
+            <iframe src="img/img-PV-Restaurants-Munchies.png" frameborder="0" width="100%" height="100%"></iframe>
+
+        </div>
+        <nav>
+            <a class="aheader" href="index.html">Inicio</a>
+            <a class="aheader" href="index.html#nosotros">Nosotros</a>
+            <a class="aheader" href="menu.html">Menú</a>
+            <a class="aheader" href="contact.html">Contacto</a>
+        </nav>
     </div>
+
+
 
 </header>
 
@@ -22,34 +33,42 @@
 
 
     <main>
-        <div>
-            <h1>Dejanos tu consulta</h1>
-        </div>
+        <div class="contactos" id=" contactos">
+            <div>
+                <h1>Contactos</h1>
+            </div>
 
-        <div>
+            <div class="google-map" id="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d820.619673234269!2d-58.39269373035669!3d-34.64261189496325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM4JzMzLjQiUyA1OMKwMjMnMzEuNCJX!5e0!3m2!1ses-419!2sar!4v1683600328494!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">Mirave 3060 - CABA</iframe>
+                <br>
+                <p class="textomaps">-hola a todos</p>
+            </div>
             <form action="" class="formulario" id="formulario">
                 <!-- Grupo Nombre -->
                 <div class="formulariogrupo formulariogrupo-correcto" id="gruponombre">
                     <label for="nombre" class="formulariolabel">Nombre</label>
                     <div class="formulariogrupo-input">
                         <input type="text" class="formularioinput" name="nombre" id="nombre" placeholder="Joaquin">
-                        <i class= "formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                        <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
                     </div>
                     <p class="formularioinput-error">Ingresar nombre sin numeros o caracteres especiales</p>
-    
+
                 </div>
-    
+
                 <!-- Grupo Apellido -->
                 <div class="formulariogrupo formulariogrupo-correcto" id="grupoapellido"">
-                    <label for="apellido" class="formulariolabel">Apellido</label>
+                    <label for=" apellido" class="formulariolabel">Apellido</label>
                     <div class="formulariogrupo-input">
                         <input type="text" class="formularioinput" name="apellido" id="apellido" placeholder="Molina">
                         <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
                     </div>
                     <p class="formularioinput-error">Ingresar apellido sin numeros o caracteres especiales</p>
-    
-                </div> 
-    
+
+                </div>
+
                 <!-- Grupo Movil -->
                 <div class="formulariogrupo formulariogrupo-correcto" id="grupomovil">
                     <label for="movil" class="formulariolabel">Movil</label>
@@ -58,67 +77,68 @@
                         <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
                     </div>
                     <p class="formularioinput-error">Ingresar solo numeros sin espacio (11 digitos)</p>
-    
+
                 </div>
-    
+
                 <!-- Grupo Email -->
                 <div class="formulariogrupo formulariogrupo-correcto" id="grupoemail">
                     <label for="email" class="formulariolabel">Email</label>
                     <div class="formulariogrupo-input">
-                        <input type="email" class="formularioinput" name="email" id="email" placeholder="correo@email.com">
+                        <input type="email" class="formularioinput" name="email" id="email"
+                            placeholder="correo@email.com">
                         <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
                     </div>
                     <p class="formularioinput-error">Ingresar correo con el formato indicado</p>
-    
+
                 </div>
-                    
+
                 <!-- Grupo Mensaje -->
                 <div class="formulariogrupo" id="grupomensaje">
                     <label for="mensaje" class="formulariolabel">Mensaje</label>
                     <div class="formulariogrupo-input">
-                        <input type="text" class="formularioinput" name="mensaje" id="mensaje" >
+                        <input type="text" class="formularioinputmensaje" name="mensaje" id="mensaje">
                         <i class="formulariovalidacion-estado fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
                     </div>
                     <p class="formularioinput-error">Ingresar duda o consulta</p>
                 </div>
-    
-    
+
+
                 <!-- Grupo Llamada telefonica -->
                 <div class="formulariogrupo" id="grupollamada">
                     <label class="formulariolabel">
-                        <input class="formulariollamada" type="checkbox" name="llamada" id="llamada" >
-                        ¿Prefiere se contactado via telefonica? 
+                        <input class="formulariollamada" type="checkbox" name="llamada" id="llamada">
+                        ¿Prefiere se contactado via telefonica?
                     </label>
-                        
+
                 </div>
-    
+
                 <!-- Alerta para formulario -->
                 <div class="formularioalert" id="formularioalert">
-                    <p> <i class="fa-solid fa-triangle-exclamation" style="color: #ff0000 ;"></i> <b>Error:</b> Llenar todos los campos del formulario</p>
+                    <p> <i class="fa-solid fa-triangle-exclamation" style="color: #ff0000 ;"></i> <b>Error:</b> Llenar
+                        todos los campos del formulario</p>
                 </div>
-    
+
                 <!-- Alerta de envio -->
                 <div class="formulariogrupo" id="formulariogrupo-btn-enviar">
                     <button type="submit" class="formulariobtn">Enviar</button>
                     <p class="formulariomensaje-exito" id="formulariomensaje-exito">Formulario enviado exitosamente</p>
                 </div>
-    
+
         </div>
 
-        
-        </form>
-        <section>
-            <div>
-                Hola mi gente!
-            </div>
-        </section>
 
+
+        </form>
+
+        </div>
     </main>
 
     <footer>
 
     </footer>
     <script src="js/form.js"></script>
+    <script src="js/header.js"></script>
+    <script src="css/style.css"></script>
     <script src="https://kit.fontawesome.com/f5d43ca80e.js" crossorigin="anonymous"></script>
 </body>
 

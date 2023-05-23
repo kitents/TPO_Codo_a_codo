@@ -1,21 +1,184 @@
 * {
     box-sizing: border-box;
-    background-color:rgb(240, 240, 240) ;
+    background-color: rgb(240, 240, 240);
 }
 
+/*Parrafos y Titulos*/
+h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+.redsoc {
+    text-align: center;
+    color: rgb(173, 28, 28);
+
+}
+
+.redsoc a {
+
+    margin: 0px 19px;
+    font-size: 20px;
+}
+
+.redsoc a:hover {
+    color: #cc1717;
+}
+
+.button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.aheader {
+    color: blanchedalmond;
+    font-size: 23px;
+    text-decoration: none;
+    background-color: dimgray;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.aheader:hover {
+    outline: 2px solid black;
+}
+
+.aheader:visited {
+    color: rgb(242, 196, 128);
+}
+
+.aheader:active {
+    background-color: rgb(243, 240, 235);
+    color: rgb(8, 8, 8);
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer nav {
+    /*display: inline;*/
+    width: 220px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+
+
+.cartel {
+    width: 100%;
+    height: 300px;
+}
+
+
+/*   -----EStilos html Contact---------------------------------------------   */
+
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main {
-    max-width: 800px; width: 90%; margin:auto; padding: 40px;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+header {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+/*Logo*/
+
+/*.logoup {
+    
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #bb2929;
+    
+}
+.logoup iframe{
+    align-self: center;
+    width: 150%;
+    height: 150%;
+
+
+}*/
+/*
+.nombrelocal {
+    height: 100%;
+    width: 100%;
+    background-color: #bb2929;
+}
+
+
+.nombrelocal {
+    display: flex;
+    position: relative;
+    
+    
+    
+}*/
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 
 .formulario {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .formulariolabel {
@@ -30,6 +193,17 @@ main {
     position: relative;
 }
 
+.formularioinputmensaje {
+    width: 100%;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: px;
+    line-height: 100px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
 .formularioinput {
     width: 100%;
     background-color: white;
@@ -40,16 +214,17 @@ main {
     padding: 0 40px 0 10px;
     transition: .3s ease all;
 }
+
 .formularioinput:focus {
-    border:3px solid rgba(243, 146, 146, 0.87);
+    border: 3px solid rgba(243, 146, 146, 0.87);
     outline: none;
     box-shadow: 3px 0px 30px rgba(red, green, blue, alpha);
-} 
+}
 
 .formularioinput-error {
     font-size: 12px;
     margin-bottom: 0;
-    display:none;
+    display: none;
 }
 
 .formularioinput-error-activo {
@@ -109,12 +284,13 @@ main {
 .formulariovalidacion-estado {
     position: absolute;
     right: 10px;
-    bottom:15px;
+    bottom: 15px;
     z-index: 100;
     font-size: 16px;
     opacity: 0;
 
 }
+
 .formulariollamada {
     margin: 10px;
 }
@@ -125,7 +301,7 @@ main {
 .formularioenvio,
 
 {
-    grid-column: span 2;
+grid-column: span 2;
 }
 
 .formularioalert {
@@ -135,11 +311,13 @@ main {
     padding: 0 15px;
     border-radius: 3px;
     display: none;
-   
+
 }
-.formularioalert-activo{
+
+.formularioalert-activo {
     display: block
 }
+
 .formularioalert p {
     background: transparent;
     margin: 0;
@@ -152,7 +330,7 @@ main {
 }*/
 
 .formulariobtn {
-    align-items:center;
+    align-items: center;
     height: 45px;
     line-height: 45px;
     width: 30%;
@@ -163,18 +341,19 @@ main {
     border-radius: 3px;
     cursor: pointer;
     transition: .2s ease all;
-    
+
+
 }
 
 .formulariobtn:hover {
-    box-shadow: 3px 0 30px rgba(16 16 16 );
+    box-shadow: 3px 0 30px rgba(16 16 16);
 }
 
 .formulariomensaje-exito {
     font-size: 14px;
     color: rgb(88, 134, 88);
     display: none;
-    
+
 }
 
 .formulariomensaje-exito-activo {
@@ -184,17 +363,19 @@ main {
 /* EStilos para validacion*/
 
 .formulariogrupo-correcto .formulariovalidacion-estado {
-    color:  rgb(49, 126, 49) ;
+    color: rgb(49, 126, 49);
     opacity: 1;
 }
 
 .formulariogrupo-incorrecto .formulariolabel {
     color: #bb2929;
 }
+
 .formulariogrupo-incorrecto .formulariovalidacion-estado {
     color: #bb2929;
     opacity: 1;
 }
+
 .formulariogrupo-incorrecto .formularioinput {
     color: #bb2929;
     border: 3px solid #bb2929;
@@ -204,30 +385,165 @@ main {
 
 /*Mediaqueries*/
 
-/*
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1200px) {
+    .contactos {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulariomensaje,
+    .formulariollamada,
+    .formularioalert,
+    .formularioenvio {}
+
+    .formulariobtn {
+
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
     .formulario {
         grid-template-columns: 1fr;
     }
-    .formulariomensaje,
-.formulariollamada,
-.formularioalert,
-.formularioenvio {
-    grid-column: 1;
-}
-.formulariobtn {
-    width: 100%;
-}
-}*/
 
-@media screen and (max-width: 1200px) {
-    
     .formulariomensaje,
-.formulariollamada,
-.formularioalert,
-.formularioenvio {
-    grid-columns: 1fr;
+    .formulariollamada,
+    .formularioalert,
+    .formularioenvio {
+        grid-column: 2;
+    }
+
+    .formulariobtn {
+        width: 70%;
+        align-items: center;
+    }
 }
-.formulariobtn {
-    width: 100%; 
-}}
+
+@media screen and (max-width: 600px) {
+
+    .headerRonnie,
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulariomensaje,
+    .formulariollamada,
+    .formularioalert,
+    .formularioenvio {
+        grid-column: 1;
+    }
+
+    .formulariobtn {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* Estilos para  API Spinner y loader*/
+
+.contaier {
+    background-color: #b7b4dd;
+    padding: 20px;
+    color: #2A3D45;
+    display: flex;
+    display: none;
+}
+
+.contaier>.block {
+    padding: 20px;
+}
+
+.block:first-child {
+    background-color: #2A3D45;
+    color: #240df3;
+}
+
+.information-contaner {
+    display: flex;
+}
+
+.information {
+    margin-left: 5px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+}
+
+.loader {
+    color: #DDC9B4;
+    font-size: 11px;
+    text-indent: -99999em;
+    position: relative;
+    width: 10em;
+    height: 10em;
+    box-shadow: inset 0 0 0 1em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    content: '';
+}
+
+.loader:before {
+    width: 5.2em;
+    height: 10.2em;
+    background: #2A3D45;
+    border-radius: 10.2em 0 0 10.2em;
+    top: -0.1em;
+    left: -0.1em;
+    -webkit-transform-origin: 5.1em 5.1em;
+    transform-origin: 5.1em 5.1em;
+    -webkit-animation: load2 2s infinite ease 1.5s;
+    animation: load2 2s infinite ease 1.5s;
+}
+
+.loader:after {
+    width: 5.2em;
+    height: 10.2em;
+    background: #2A3D45;
+    border-radius: 0 10.2em 10.2em 0;
+    top: -0.1em;
+    left: 4.9em;
+    -webkit-transform-origin: 0.1em 5.1em;
+    transform-origin: 0.1em 5.1em;
+    -webkit-animation: load2 2s infinite ease;
+    animation: load2 2s infinite ease;
+}
+
+@-webkit-keyframes load2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
