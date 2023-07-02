@@ -16,15 +16,24 @@ const expresiones = {
 
 }
 
+const campos = {
+    nombre: false,
+    apellido: false,
+    movil: false,
+    email: false,
+    mensaje: false
+}
+
 const validarFormulario = (e) => {
     switch (e.target.name) {
         case "nombre":
             if (expresiones.nombre.test(e.target.value)) {
-                document.getElementById('gruponombre').classList.remove('formulariogrupo-incorrecto');
+                document.getElementById(gruponombre).classList.remove('formulariogrupo-incorrecto');
                 document.getElementById('gruponombre').classList.add('formulariogrupo-correcto');
                 document.querySelector('#gruponombre i').classList.add('fa-circle-xmark');
                 document.querySelector('#gruponombre i').classList.remove('fa-circle-xmark');
                 document.querySelector('#gruponombre .formularioinput-error').classList.remove('formularioinput-error-activo');
+                campos[nombre] = true;
             }
             else {
                 document.getElementById('gruponombre').classList.add('formulariogrupo-incorrecto');
@@ -32,6 +41,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#gruponombre i').classList.add('fa-circle-xmark');
                 document.querySelector('#gruponombre i').classList.remove('fa-circle-xmark');
                 document.querySelector('#gruponombre .formularioinput-error').classList.add('formularioinput-error-activo');
+                campos[nombre] = false;
             }
 
             break;
@@ -42,6 +52,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupoapellido i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupoapellido i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupoapellido .formularioinput-error').classList.remove('formularioinput-error-activo');
+                campos[apellido] = true;
             }
             else {
                 document.getElementById('grupoapellido').classList.add('formulariogrupo-incorrecto');
@@ -49,6 +60,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupoapellido i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupoapellido i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupoapellido .formularioinput-error').classList.add('formularioinput-error-activo');
+                campos[apellido] = false;
             }
 
             break;
@@ -59,6 +71,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupomovil i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupomovil i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupomovil .formularioinput-error').classList.remove('formularioinput-error-activo');
+                campos[movil] = true;
             }
             else {
                 document.getElementById('grupomovil').classList.add('formulariogrupo-incorrecto');
@@ -66,6 +79,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupomovil i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupomovil i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupomovil .formularioinput-error').classList.add('formularioinput-error-activo');
+                campos[movil] = false;
             }
 
             break;
@@ -76,6 +90,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupoemail i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupoemail i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupoemail .formularioinput-error').classList.remove('formularioinput-error-activo');
+                campos[email] = true;
             }
             else {
                 document.getElementById('grupoemail').classList.add('formulariogrupo-incorrecto');
@@ -83,6 +98,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupoemail i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupoemail i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupoemail .formularioinput-error').classList.add('formularioinput-error-activo');
+                campos[email] = false;
             }
 
             break;
@@ -93,6 +109,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupomensaje i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupomensaje i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupomensaje .formularioinput-error').classList.remove('formularioinput-error-activo');
+                campos[mensaje] = true;
             }
             else {
                 document.getElementById('grupomensaje').classList.add('formulariogrupo-incorrecto');
@@ -100,6 +117,7 @@ const validarFormulario = (e) => {
                 document.querySelector('#grupomensaje i').classList.add('fa-circle-xmark');
                 document.querySelector('#grupomensaje i').classList.remove('fa-circle-xmark');
                 document.querySelector('#grupomensaje .formularioinput-error').classList.add('formularioinput-error-activo');
+                campos[mensaje] = false;
             }
 
             break;
@@ -117,4 +135,6 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    if (campos.nombre && campos.apellido && campos.email && campos.mensaje && campos.movil) { formulario.reset() }
 });
